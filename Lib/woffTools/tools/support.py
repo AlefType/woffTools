@@ -352,6 +352,7 @@ def startHTML(title=None, cssReplacements={}):
     writer.begintag("html", xmlns="http://www.w3.org/1999/xhtml", lang="en")
     # start the head
     writer.begintag("head")
+    writer.simpletag("meta", http_equiv="X-UA-Compatible", content="IE=edge")
     writer.simpletag("meta", http_equiv="Content-Type", content="text/html; charset=utf-8")
     # title
     if title is not None:
